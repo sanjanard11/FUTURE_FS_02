@@ -1,23 +1,74 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Dashboard from "./components/Dashboard";
+import LeadForm from "./components/LeadForm";
+import LeadList from "./components/LeadList";
+import "./App.css";
 
 function App() {
+
+  const [leads, setLeads] = useState(() => {
+    const savedLeads = localStorage.getItem("crm-leads");
+    return savedLeads ? JSON.parse(savedLeads) : [];
+  });
+
+  const [editingLead, setEditingLead] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem("crm-leads", JSON.stringify(leads));
+  }, [leads]);
+
+  const addLead = (lead) => {
+
+    if (editingLead) {
+
+      setLeads(
+        leads.map((item) =>
+          item.id === editingLead.id ? lead : item
+        )
+      );
+
+      setEditingLead(null);
+
+    } else {
+
+      setLeads([
+        ...leads,
+        {
+          ...lead,
+          id: Date.now(),
+        },
+      ]);
+
+    }
+  };
+
+  const deleteLead = (id) => {
+    setLeads(leads.filter((lead) => lead.id !== id));
+  };
+
+  const editLead = (lead) => {
+    setEditingLead(lead);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      <Header />
+
+      <Dashboard leads={leads} />
+
+      <LeadForm
+        addLead={addLead}
+        editingLead={editingLead}
+      />
+
+      <LeadList
+        leads={leads}
+        deleteLead={deleteLead}
+        editLead={editLead}
+      />
+
     </div>
   );
 }
