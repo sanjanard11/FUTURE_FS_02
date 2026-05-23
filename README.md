@@ -1,14 +1,14 @@
 # 📊 Lead Client Management System (LCM)
 
-A modern full-stack Lead Client Management System built using React.js, Node.js, Express.js, and MongoDB. The application helps businesses efficiently manage leads, track client information, monitor sales pipelines, and improve customer relationship management.
+A modern full-stack Lead Client Management System developed using React.js, Node.js, Express.js, and MongoDB. The application helps businesses efficiently manage customer leads, track client interactions, monitor lead status, and improve overall sales workflow.
 
-## 🌐 Live Deployment
+---
 
-Frontend: https://futurefs02-gilt.vercel.app/
+## 🌐 Live Demo
 
-Backend: Node.js + Express API
+**Live Website:** https://your-fs2-live-link.surge.sh
 
-Database: MongoDB Atlas
+**GitHub Repository:** https://github.com/sanjanard11/FUTURE_FS_02
 
 ---
 
@@ -16,15 +16,27 @@ Database: MongoDB Atlas
 
 ### Task 2 – Future Interns Full Stack Web Development
 
-The Lead Client Management System (LCM) is designed to simplify lead tracking and client management processes. It enables users to create, update, monitor, and organize client information through a centralized dashboard.
+The Lead Client Management System (LCM) is designed to simplify the process of capturing, organizing, and managing business leads through a centralized dashboard.
 
-### Project Objectives
+The application enables users to:
 
-- Manage client leads efficiently
-- Store customer information securely
-- Track lead status and progress
-- Improve sales workflow management
-- Provide an easy-to-use dashboard interface
+* Store client information securely
+* Manage lead records
+* Track lead progress
+* Update client details
+* Improve customer relationship management
+* Organize sales pipelines effectively
+
+---
+
+# 🎯 Project Objectives
+
+* Centralized lead management
+* Efficient client tracking
+* Improved sales workflow
+* Secure data storage
+* User-friendly dashboard
+* Responsive and modern interface
 
 ---
 
@@ -32,96 +44,99 @@ The Lead Client Management System (LCM) is designed to simplify lead tracking an
 
 ## 🎨 Frontend Features
 
-- Modern Responsive User Interface
-- Dashboard Overview
-- Lead Management Module
-- Client Information Management
-- Search & Filter Functionality
-- Mobile-Friendly Design
-- Interactive Components
-- Real-Time Data Updates
+* Modern Responsive UI
+* Interactive Dashboard
+* Lead Management Panel
+* Client Information Dashboard
+* Search Functionality
+* Filter Options
+* Mobile-Friendly Design
+* Reusable React Components
 
 ## 🔧 Backend Features
 
-- RESTful API Architecture
-- Express.js Server
-- MongoDB Database Integration
-- CRUD Operations
-- Data Validation
-- Error Handling
-- Secure API Endpoints
-- Environment Variable Configuration
+* RESTful API Architecture
+* Express.js Server
+* MongoDB Database Integration
+* CRUD Operations
+* Input Validation
+* Error Handling
+* Secure API Routes
+* Environment Variable Support
 
 ---
 
 # 📋 Core Functionalities
 
-### 👤 Client Management
+## 👤 Client Management
 
-- Add New Clients
-- Update Client Information
-- Delete Client Records
-- View Client Details
+* Add New Clients
+* Edit Client Information
+* Delete Client Records
+* View Client Profiles
+* Store Contact Details
 
-### 📈 Lead Tracking
+## 📈 Lead Management
 
-- Create New Leads
-- Track Lead Status
-- Monitor Sales Pipeline
-- Update Lead Progress
-- Lead Categorization
+* Create New Leads
+* Update Lead Status
+* Track Lead Progress
+* Categorize Leads
+* Manage Sales Pipeline
 
-### 📊 Dashboard
+## 📊 Dashboard Analytics
 
-- Total Leads Overview
-- Active Clients Statistics
-- Status Tracking
-- Quick Actions Panel
+* Total Leads Count
+* Active Clients Overview
+* Lead Status Monitoring
+* Quick Action Controls
 
-### 🔍 Search & Filtering
+## 🔍 Search & Filters
 
-- Search Clients
-- Search Leads
-- Filter by Status
-- Filter by Category
+* Search by Client Name
+* Search by Lead Status
+* Filter Leads
+* Filter Clients
+* Quick Data Retrieval
 
 ---
 
-# 🛠️ Technologies Used
+# 🛠 Technologies Used
 
 ## Frontend
 
-- React.js
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Axios
-- React Router DOM
+* React.js
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* Axios
+* React Router DOM
 
 ## Backend
 
-- Node.js
-- Express.js
+* Node.js
+* Express.js
 
 ## Database
 
-- MongoDB Atlas
-- Mongoose
+* MongoDB Atlas
+* Mongoose
 
 ## Additional Packages
 
-- dotenv
-- cors
-- nodemon
-- express-validator
-- helmet
+* dotenv
+* cors
+* nodemon
+* express-validator
+* helmet
+* concurrently
 
 ---
 
 # 📁 Project Structure
 
 ```text
-Lead-Client-Management-System/
+FUTURE_FS_02/
 │
 ├── client/
 │   ├── public/
@@ -134,9 +149,9 @@ Lead-Client-Management-System/
 │   └── package.json
 │
 ├── server/
+│   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── controllers/
 │   ├── middleware/
 │   └── server.js
 │
@@ -153,7 +168,7 @@ Lead-Client-Management-System/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/sanjanard11/FUTURE_FS_01.git
+git clone https://github.com/sanjanard11/FUTURE_FS_02.git
 ```
 
 ## Install Dependencies
@@ -192,7 +207,7 @@ MONGODB_URI=your_mongodb_connection_string
 
 ---
 
-# ▶️ Running The Project
+# ▶️ Running The Application
 
 ## Run Backend
 
@@ -214,13 +229,13 @@ npm run dev
 
 Frontend:
 
-```text
+```
 http://localhost:3000
 ```
 
 Backend:
 
-```text
+```
 http://localhost:5000
 ```
 
@@ -252,41 +267,41 @@ DELETE /api/clients/:id
 
 ## Frontend Deployment
 
-- GitHub Pages
-- Vercel
-- Netlify
-- Surge
+* GitHub Pages
+* Vercel
+* Netlify
+* Surge
 
 ## Backend Deployment
 
-- Render
-- Railway
-- Vercel
-- Heroku
+* Render
+* Railway
+* Heroku
+* Vercel
 
 ---
 
 # 🔒 Security Features
 
-- Input Validation
-- Environment Variables Protection
-- MongoDB Data Security
-- CORS Configuration
-- Secure API Routes
-- Error Handling Middleware
+* Input Validation
+* Environment Variable Protection
+* Secure API Routing
+* MongoDB Security
+* Error Handling Middleware
+* CORS Configuration
 
 ---
 
 # 🎯 Future Enhancements
 
-- User Authentication
-- Admin Dashboard
-- Role-Based Access Control
-- Email Notifications
-- Lead Analytics
-- Customer Activity Tracking
-- Report Generation
-- Data Export Feature
+* User Authentication
+* Role-Based Access Control
+* Admin Dashboard
+* Email Notifications
+* Lead Analytics
+* Activity Tracking
+* Report Generation
+* Export Data Functionality
 
 ---
 
@@ -299,11 +314,8 @@ Future Interns – Full Stack Web Development
 GitHub:
 https://github.com/sanjanard11
 
-LinkedIn:
-Sanjana RD
-
 Email:
-sanjanasanju06256@gmail.com
+[sanjanasanju06256@gmail.com](mailto:sanjanasanju06256@gmail.com)
 
 ---
 
