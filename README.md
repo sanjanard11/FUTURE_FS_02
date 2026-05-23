@@ -4,7 +4,7 @@ A modern full-stack Lead Client Management System built using React.js, Node.js,
 
 ## 🌐 Live Deployment
 
-Frontend: https://your-live-link.surge.sh
+Frontend: https://futurefs02-gilt.vercel.app/
 
 Backend: Node.js + Express API
 
