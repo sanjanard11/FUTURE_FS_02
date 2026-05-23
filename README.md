@@ -29,6 +29,14 @@ The application enables users to:
 
 ---
 
+### 📦 Deliverable:
+A live portfolio website with source code hosted on GitHub.
+
+**Developer**: SANJANA RD
+**Internship**: Future Interns - Full Stack Web Development
+
+-----
+
 # 🎯 Project Objectives
 
 * Centralized lead management
